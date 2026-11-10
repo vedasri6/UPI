@@ -1,0 +1,54 @@
+[
+  {
+    "test": "1. What is a UPI PIN?",
+    "words": 52,
+    "status": 200,
+    "text": "A UPI PIN is a secret 4 or 6 digit personal passcode set by you to authorize financial transactions from your bank account using UPI apps. It acts like an ATM PIN. You enter it only to send money or check your bank balance, and you must never share it with anyone."
+  },
+  {
+    "test": "2. Why should I never share an OTP?",
+    "words": 52,
+    "status": 200,
+    "text": "An One Time Password (OTP) is a temporary secret key used to verify your identity during transactions or account logins. Sharing your OTP allows fraudsters to bypass your security, instantly authorize fraudulent money transfers from your bank account, or hijack your personal accounts. Banks and UPI apps never ask for your OTP."
+  },
+  {
+    "test": "3. I clicked a suspicious link",
+    "words": 48,
+    "status": 200,
+    "text": "Disconnect your internet immediately to block data transmission. Check your phone for unexpected app downloads and uninstall them. Change your UPI PIN, banking passwords, and email passwords from a safe connection. Monitor your bank accounts closely. If you notice unauthorized money deductions, report immediately to 1930 or cybercrime.gov.in."
+  },
+  {
+    "test": "4a. Chat URL Check",
+    "words": 31,
+    "status": 200,
+    "text": "Unable to Verify. Without accessing a live threat database, I cannot confirm if this link is safe. Example.com is a standard reserved domain used for documentation. \n\nNever enter your UPI PIN"
+  },
+  {
+    "test": "4b. Analyze-Link Third-Party URL",
+    "status": 200,
+    "text": "Status: Unable to Verify\nReason: No live threat intelligence API key (VirusTotal or Google Safe Browsing) is configured in backend/.env. Could not verify domain against a live reputation database.\nAction: Exercise caution. Do not enter sensitive credentials, passwords, or your UPI PIN; verify the domain directly via official sources."
+  },
+  {
+    "test": "4c. Analyze-Link Official URL",
+    "status": 200,
+    "text": "Status: No known threats detected\nReason: Matches a recognized official government, regulatory, or banking domain (no live external blacklist was queried). Note: Never guarantee a URL is 100% safe.\nAction: Safe to visit official portal. Always verify HTTPS and never share your UPI PIN or OTP."
+  },
+  {
+    "test": "5. What is a QR code scam?",
+    "words": 51,
+    "status": 200,
+    "text": "A QR code scam occurs when fraudsters trick you into scanning a QR code to receive money or payments. In UPI payments, scanning a QR code and entering your UPI PIN always sends money from your account, never receives it. Scammers exploit this misunderstanding to steal funds directly from your bank."
+  },
+  {
+    "test": "6. Follow-up Question",
+    "words": 52,
+    "status": 200,
+    "text": "Fraudsters often pretend to be online buyers on platforms like OLX, fake customer support agents, or army personnel. They send a QR code, claiming it will credit money or cashbacks to your account. When you scan it and enter your UPI PIN, you unknowingly authorize a transfer of your money to them."
+  },
+  {
+    "test": "7. Telugu UPI PIN",
+    "words": 14,
+    "status": 200,
+    "text": "యూపీఐ పిన్ అనేది యూపీఐ యాప్‌ల ద్వారా డిజిటల్ లావాదేవీలను సురక్షితంగా పూర్తి చేయడానికి ఉపయోగించే 4 లేదా"
+  }
+]

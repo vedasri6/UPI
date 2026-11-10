@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* 18px base text by default for elder-friendly readability */
+    font-size: 18px;
+  }
+
+  html[data-text-size="normal"] {
+    font-size: 18px;
+  }
+
+  html[data-text-size="large"] {
+    font-size: 20.5px;
+  }
+
+  html[data-text-size="xl"] {
+    font-size: 23px;
+  }
+
+  body {
+    font-family: 'Inter', 'Noto Sans Telugu', system-ui, -apple-system, sans-serif;
+    color: #0f172a;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+
+  .dark body {
+    color: #f1f5f9;
+  }
+
+  /* Accessible visible keyboard focus rings */
+  :focus-visible {
+    outline: 3px solid #0F4C81 !important;
+    outline-offset: 3px !important;
+    border-radius: 8px;
+  }
+
+  .dark :focus-visible {
+    outline: 3px solid #38BDF8 !important;
+    outline-offset: 3px !important;
+  }
+}
+
+/* Elder-Friendly High Contrast Mode */
+html.high-contrast {
+  filter: contrast(115%);
+}
+
+html.high-contrast button,
+html.high-contrast a {
+  border-width: 2px !important;
+}
+
+html.high-contrast .border {
+  border-color: #0F4C81 !important;
+}
+
+html.high-contrast.dark .border {
+  border-color: #7DD3FC !important;
+}
+
+/* Custom Glassmorphism Effects */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(15, 76, 129, 0.15);
+}
+
+.dark .glass-panel {
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Reduced motion preference for seniors */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Subtle Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-float {
+  animation: float 4s infinite ease-in-out;
+}
+
+/* Custom Pulse Animation */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.96; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.5s infinite ease-in-out;
+}
